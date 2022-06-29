@@ -635,62 +635,6 @@
   }
 </script>
 
-{% unless template == 'index' or template == 'product' %}
-  <style>
-    .header-wrapper{
-      background: white;
-    }
-    
-    #MainContent{
-      margin-top: 100px;
-    }
-    
-    .header__menu-item{
-      color: #000;
-    }
-
-    .header__heading-link .h2{
-      color: #000;
-    }
-
-    .icon-cart path{
-      fill: #000;
-    }
-
-    .cart-count-bubble{
-      background-color: black;
-      color: white;
-    }
-  </style>
-{% endunless %}
-{% if template == 'index' or template == 'product' %}
-  <script>
-    $(document).ready(function(){       
-              var scroll_pos = 0;
-              $(document).scroll(function() { 
-                  scroll_pos = $(this).scrollTop();
-                  if(scroll_pos > 210) {
-                      $(".header-wrapper").css('background-color', 'white');
-                      $(".header__menu-item").css('color', 'black');
-                      $(".header__heading-link .h2").css('color', 'black')
-                      $(".header__icon--cart .icon path").css('fill', 'black')
-                      $(".cart-count-bubble").css('background-color', 'black')
-                      $(".cart-count-bubble").css('color', 'white')
-                      $(".icon-hamburger path").css('fill', 'black')
-                  } else {
-                      $(".header-wrapper").css('background-color', 'transparent');
-                      $(".header__menu-item").css('color', 'white')
-                      $(".header__heading-link .h2").css('color', 'white')
-                      $(".header__icon--cart .icon path").css('fill', 'white')
-                      $(".cart-count-bubble").css('background-color', 'white')
-                      $(".cart-count-bubble").css('color', 'black')
-                      $(".icon-hamburger path").css('fill', 'white')
-                  }
-              });
-          });
-  </script>
-{% endif %}
-
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
   <script type="application/ld+json">
