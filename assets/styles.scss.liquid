@@ -5,11 +5,18 @@
     font-style: normal;
 }
   
-  @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('{{ "HelveticaNeue.ttf" | asset_url }}') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('{{ "HelveticaNeue.ttf" | asset_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ALISEO';
+  src: url('{{ "ALISEO.ttf" | asset_url }}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .section-header{
@@ -113,4 +120,29 @@
       background: #FF9900 !important;
     }
   }
+}
+
+.banner__buttons{
+  .button{
+    background: #FF9900;
+    color: #fff;
+    &::before, &::after{
+      display: none;
+    }
+  }
+}
+
+.card__information{
+  text-align: center;
+
+  .price--on-sale{
+    text-align: center;
+  }
+}
+
+.card__heading{
+  font-family: 'ALISEO';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
 }
