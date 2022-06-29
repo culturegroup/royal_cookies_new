@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {}
@@ -20,6 +13,10 @@
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
           }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
         },
         "price": {
           "type": "price",
@@ -40,72 +37,20 @@
           "settings": {
             "show_dynamic_checkout": true
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "caption",
+        "description",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_size": "large",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
@@ -113,9 +58,103 @@
         "padding_top": 36,
         "padding_bottom": 12
       }
+    },
+    "1656347493a508d7c1": {
+      "type": "four-images-section",
+      "blocks": {
+        "d225c5a6-3a50-47e3-a9bb-b35381e48047": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/royalcookies-01_19_2251.jpg"
+          }
+        },
+        "ea8aeb13-2e30-48b6-88f4-3cf14638a5ea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/royalcookies-01_19_2251.jpg"
+          }
+        },
+        "50f69e96-ddd3-486b-a5d6-e07058074d6d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/royalcookies-01_19_2251.jpg"
+          }
+        },
+        "0b26516e-d71f-4601-bb1f-7af344f05742": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/royalcookies-01_19_2251.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d225c5a6-3a50-47e3-a9bb-b35381e48047",
+        "ea8aeb13-2e30-48b6-88f4-3cf14638a5ea",
+        "50f69e96-ddd3-486b-a5d6-e07058074d6d",
+        "0b26516e-d71f-4601-bb1f-7af344f05742"
+      ],
+      "settings": {
+        "title": "<p>Fresh Royal<\/p><p>Cookies <span style=\"text-decoration:underline\">Everyday<\/span><\/p>"
+      }
+    },
+    "16564889177015db20": {
+      "type": "detailed-info-section",
+      "settings": {
+        "title": "<p>Fresh <span style=\"text-decoration:underline\">Inside<\/span> For You<\/p>",
+        "desktop_image": "shopify:\/\/shop_images\/Section2-img.png",
+        "mobile_image": "shopify:\/\/shop_images\/Section2-img-for-media.png",
+        "ingredients": "<p>Unsalted Butter Cold Cubes, Turbinado Sugar, Brown Sugar, All-Purpose Flour, Dry Milk Powder, Oat Flour, Red Cocoa Powder, Corn Starch, Salt, Baking Soda, Vanilla Extract, Large Egg, Egg Yolk, Semi-Sweet Chocolate Chips, Oreo Crumbs<\/p>"
+      }
+    },
+    "165648944403627a01": {
+      "type": "three-images-section",
+      "blocks": {
+        "946d545c-ec3d-4238-89a3-d018441d77a6": {
+          "type": "image",
+          "settings": {
+            "text": "<p>Even edible when its being destroyed by a Child<\/p>",
+            "image": "shopify:\/\/shop_images\/Section3-img1.jpg"
+          }
+        },
+        "242afc78-a29a-4f00-aae8-c7182f35aeee": {
+          "type": "image",
+          "settings": {
+            "text": "<p>The head baker doesn't use forks...<\/p>",
+            "image": "shopify:\/\/shop_images\/Section3-img2.jpg"
+          }
+        },
+        "d11ffc92-ccfa-4c9c-ab10-58e4b475776a": {
+          "type": "image",
+          "settings": {
+            "text": "<p>So delicious, you won't stop at just one.<\/p>",
+            "image": "shopify:\/\/shop_images\/Section3-img3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "946d545c-ec3d-4238-89a3-d018441d77a6",
+        "242afc78-a29a-4f00-aae8-c7182f35aeee",
+        "d11ffc92-ccfa-4c9c-ab10-58e4b475776a"
+      ],
+      "settings": {}
+    },
+    "16564903536bee145e": {
+      "type": "text-and-image-section",
+      "settings": {
+        "title": "<p>OMG<\/p><p>THAT’S <span style=\"text-decoration:underline\">GOOD<\/span><\/p>",
+        "info": "<p>Royals take cookies to the next level with rich ingredients and undeniably sweet tastes for an experience like none other. Baked fresh daily to ensure the best quality - these aren’t your grandma’s cookies, sonny. <\/p>",
+        "points": "<p>These are cookies for the red carpet.<\/p><p>Cookies for munching on your private jet to Bali.<\/p><p>Cookies to share with Queen Elizabeth herself.<\/p>",
+        "highlighted_text": "These are cookies for Royals, are you ready?",
+        "small_image": "shopify:\/\/shop_images\/Section4-first-image.jpg",
+        "large_image": "shopify:\/\/shop_images\/Section4-second-image.jpg"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1656347493a508d7c1",
+    "16564889177015db20",
+    "165648944403627a01",
+    "16564903536bee145e"
   ]
 }
