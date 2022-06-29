@@ -7,19 +7,19 @@
           "type": "title",
           "settings": {}
         },
-        "caption": {
+        "d9231ea1-1e0d-41cf-9f39-d4416f501cfd": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "(Cookies Rule Everything Around Me)",
             "text_style": "subtitle"
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "variant_picker": {
@@ -27,10 +27,6 @@
           "settings": {
             "picker_type": "button"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -41,11 +37,10 @@
       },
       "block_order": [
         "title",
-        "caption",
-        "description",
+        "d9231ea1-1e0d-41cf-9f39-d4416f501cfd",
         "price",
+        "description",
         "variant_picker",
-        "quantity_selector",
         "buy_buttons"
       ],
       "settings": {
