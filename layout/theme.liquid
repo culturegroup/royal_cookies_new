@@ -272,5 +272,29 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% if template == 'product' %}
+      <button class="sticky-add-to-cart">
+        Add to cart
+      </button>
+
+      <script>
+        $('.sticky-add-to-cart').click(function(){
+          $(".product-form__submit").trigger( "click" );
+        })
+
+        $(document).ready(function(){       
+          var scroll_pos = 0;
+          $(document).scroll(function() { 
+              scroll_pos = $(this).scrollTop();
+              if(scroll_pos > 700) {
+                  $(".sticky-add-to-cart").css('display', 'block');
+              } else {
+                  $(".sticky-add-to-cart").css('display', 'none');
+              }
+          });
+        });
+      </script>
+    {% endif %}
   </body>
 </html>

@@ -635,6 +635,67 @@
   }
 </script>
 
+
+{% if template == 'index' %}
+  <style>
+
+    .header-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+
+    .header-wrapper{
+      background: transparent;
+    }
+
+    .header__active-menu-item{
+      color: #fff;
+    }
+
+    .header__menu-item{
+      color: #fff;
+    }
+    .header__heading-link .h2{
+      color: #fff;
+    }
+    .icon-cart path{
+      fill: #fff;
+    }
+    .cart-count-bubble{
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){       
+      var scroll_pos = 0;
+      $(document).scroll(function() { 
+          scroll_pos = $(this).scrollTop();
+          if(scroll_pos > 210) {
+              $(".header-wrapper").css('background-color', 'white');
+              $(".header__menu-item").css('color', 'black');
+              $(".header__heading-link .h2").css('color', 'black')
+              $(".header__icon--cart .icon path").css('fill', 'black')
+              $(".cart-count-bubble").css('background-color', 'black')
+              $(".cart-count-bubble").css('color', 'white')
+              $(".icon-hamburger path").css('fill', 'black')
+              $(".header__active-menu-item").css('color', 'black')
+          } else {
+              $(".header-wrapper").css('background-color', 'transparent');
+              $(".header__menu-item").css('color', 'white')
+              $(".header__heading-link .h2").css('color', 'white')
+              $(".header__icon--cart .icon path").css('fill', 'white')
+              $(".cart-count-bubble").css('background-color', 'white')
+              $(".cart-count-bubble").css('color', 'black')
+              $(".icon-hamburger path").css('fill', 'white')
+              $(".header__active-menu-item").css('color', 'white')
+          }
+      });
+    });
+  </script>
+{% endif %}
+
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = request.origin | append: routes.search_url | append: "?q={search_term_string}" %}
   <script type="application/ld+json">
