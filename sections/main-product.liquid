@@ -70,6 +70,9 @@
           </div>
           <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
             {%- render 'price', product: product, use_variant: true, show_badges: false, price_class: 'price--large' -%}
+            {% if product.metafields.okendo.newProductListingSnippet.value != blank %}
+              {{ product.metafields.okendo.newProductListingSnippet.value }}
+            {% endif %}
           </div>
           {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
             <div class="product__tax caption rte">
