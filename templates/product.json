@@ -16,6 +16,12 @@
         },
         "price": {
           "type": "price",
+          "settings": {
+            "subtitle": "GUARANTEED DELIVERY WITHIN 3-5 DAYS"
+          }
+        },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {}
         },
         "description": {
@@ -39,6 +45,7 @@
         "title",
         "d9231ea1-1e0d-41cf-9f39-d4416f501cfd",
         "price",
+        "loox-rating",
         "description",
         "variant_picker",
         "buy_buttons"
@@ -143,6 +150,33 @@
         "small_image": "shopify:\/\/shop_images\/Section4-first-image.jpg",
         "large_image": "shopify:\/\/shop_images\/Section4-second-image.jpg"
       }
+    },
+    "165653995891ae685b": {
+      "type": "product-reviews",
+      "settings": {
+        "title": "<p>Everyone Loves<\/p><p>Our <span style=\"text-decoration:underline\">Cookies<\/span><\/p>"
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
     }
   },
   "order": [
@@ -150,6 +184,8 @@
     "1656347493a508d7c1",
     "16564889177015db20",
     "165648944403627a01",
-    "16564903536bee145e"
+    "16564903536bee145e",
+    "165653995891ae685b",
+    "loox-product-reviews-app-section"
   ]
 }

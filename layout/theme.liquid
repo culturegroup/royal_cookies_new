@@ -216,6 +216,8 @@
     </script>
   
   {% include "trackify_x" %}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
   <body class="gradient">
@@ -296,5 +298,7 @@
         });
       </script>
     {% endif %}
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
