@@ -1,0 +1,112 @@
+.footer{
+    background: url("{{ 'Rectangle 2.png' | asset_url }}");
+    position: relative;
+    margin-top: 80px !important;
+
+    .icon-logo{
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer--newsletter{
+        .footer__newsletter{
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            margin: auto;
+            margin: 50px 0;
+
+            .footer__heading{
+                font-family: 'Juana';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 58px;
+                max-width: 310px;
+                margin-right: 40px;
+
+                @media screen and (max-width: 767px) {
+                    font-weight: 300;
+                    font-size: 36px;
+                    line-height: 38px;
+                }
+            }
+            .newsletter_form{
+                height: 100%;
+                max-width: 385px;
+                flex: 1 1 0px;
+
+                .newsletter__field-wrapper{
+                    height: 100%;
+
+                    .fields{
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+
+                        input[type="email"]{
+                            &:focus{
+                                border: none;
+                            }
+                            
+                            &::placeholder {
+                                color: #212328;
+                                font-size: 14px;
+                                line-height: 19px;
+                            }
+                        }
+
+                        button{
+                            margin-top: 15px;
+                            position: relative;
+                            background: #212328;
+                            color: #fff;
+                            padding: 10px;
+                            font-family: 'HelveticaNeue';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-block__heading{
+        font-family: 'HelveticaNeue';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-bottom: 5px;
+    }
+
+    .list-menu__item {
+        font-family: 'HelveticaNeue';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #333333;
+    }
+}
+
+.announcement-bar{
+    border: none;
+    
+    .announcement-bar__message{
+        background: #ff375b;
+        color: #fff;
+    }
+}

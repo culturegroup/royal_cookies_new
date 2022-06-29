@@ -1,0 +1,106 @@
+.footer{
+    background: url('{{ "background-footer.png" | asset_url }}');
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 100px;
+    }
+
+    .sticky-royal-image{
+        position: absolute;
+        left: 50%;
+        top: -40px;
+        transform: translateX(-50%);
+        z-index: 1;
+
+        @media screen and (max-width: 767px) {
+            top: -20px;
+        }
+    }
+
+    .newsletter-wrapper{
+        padding-top: 0;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .newsletter-wrapper__title{
+            flex: 1 1 0px;
+            display: flex;
+            font-family: 'Juana';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 50px;
+            line-height: 58px;
+            
+            img {
+                height: 120px;
+                width: 7px;
+                object-fit: cover;
+                margin-right: 10px;
+                margin-top: -10px;
+            }
+        }
+
+        .newsletter{
+            flex: 1 1 0px;
+
+            .input-row{
+                input {
+                    width: 100% !important;
+                    display: block !important;
+                    font-family: 'Helvetica Neue';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                }
+
+                input[type=submit]{
+                    background: #000;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    .footer-menu-wrap{
+        .footer_menu{
+            h6{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+            }
+
+            .toggle_content{
+                ul {
+                    li {
+                        p {
+                            a{
+                                font-family: 'Helvetica Neue';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                line-height: 17px;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-social-icons{
+        .social_icons{
+            display: flex !important;
+            justify-content: center;
+        }
+    }
+}

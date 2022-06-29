@@ -2137,8 +2137,8 @@ input[type='checkbox'] {
 
 .cart-count-bubble {
   position: absolute;
-  background-color: rgb(var(--color-button));
-  color: rgb(var(--color-button-text));
+  background-color: #fff;
+  color: #000;
   height: 1.7rem;
   width: 1.7rem;
   border-radius: 100%;
@@ -2242,7 +2242,7 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
+    grid-template-areas: 'navigation heading heading icons';
     grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
@@ -2269,6 +2269,7 @@ input[type='checkbox'] {
 
 .header > .header__heading-link {
   line-height: 0;
+  width: 80%;
 }
 
 .header__heading,
@@ -2290,7 +2291,7 @@ input[type='checkbox'] {
 
 .header__heading-link .h2 {
   line-height: 1;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #fff;
 }
 
 .header__heading-logo {
@@ -2313,6 +2314,7 @@ input[type='checkbox'] {
   .header__heading,
   .header__heading-link {
     justify-self: start;
+    width: 80%;
   }
 
   .header--top-center .header__heading-link,
@@ -2593,7 +2595,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: rgba(var(--color-foreground), 0.75);
+  color: #fff;
 }
 
 .header__menu-item:hover {
