@@ -1,0 +1,58 @@
+{{ 'detailed-info-section.scss.css' | asset_url | stylesheet_tag }}
+
+<section class="detailed-info-section">
+
+    <img class="cookie-logo" src="{{ 'cookie-logo.svg' | asset_url }}" alt="">
+
+    <div class="section-header section-header_indent_second">
+        {{ section.settings.title }}
+    </div>
+
+    <img class="detailed-info-section__img" src="{{ section.settings.desktop_image.src | img_url: 'master' }}" alt="">
+
+    <img class="detailed-info-section__img_for-media" src="{{ section.settings.mobile_image.src | img_url: 'master' }}" alt="">
+
+    <div class="detailed-info-section__ingridients">
+
+        <img src="{{ 'cookie-2.svg' | asset_url }}" alt="">
+
+        <h3>all ingredients:</h3>
+
+        {{ section.settings.ingredients }}
+
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Detailed info section",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "desktop_image",
+            "label": "Desktop image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile image"
+        },
+        {
+            "type": "richtext",
+            "id": "ingredients",
+            "label": "Ingredients"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Detailed info section"
+        }
+    ]
+}
+{% endschema %}

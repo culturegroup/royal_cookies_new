@@ -1,0 +1,78 @@
+{{ 'text-and-image-section.scss.css' | asset_url | stylesheet_tag }}
+
+<section class="text-and-image-section">
+
+    <div class="text-block">
+
+        <img class="text-block__before-header-img" src="{{'Section4-before-header.png' | asset_url }}" alt="">
+
+        <h2 class="text-block__header">
+            {{ section.settings.title }}
+        </h2>
+
+        <div class="text-block__paragraph">
+            {{ section.settings.info }}
+        </div>
+
+        <ul class="text-block__list">
+            {{ section.settings.points }}
+        </ul>
+
+        <div class="text-block__ready">{{ section.settings.highlighted_text }}</div>
+
+    </div>
+
+    <div class="text-and-image-section__img-block">
+
+        <img class="small-img" src="{{ section.settings.small_image.src | img_url: 'master' }}" alt="">
+
+        <img class="big-img" src="{{ section.settings.large_image.src | img_url: 'master' }}" alt="">
+
+        <img class="logo-img" src="{{ 'Section4-logo.png' | asset_url }}" alt="">
+
+    </div>
+
+</section>
+
+{% schema %}
+{
+    "name": "Text and Image section",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "info",
+            "label": "Information"
+        },
+        {
+            "type": "richtext",
+            "id": "points",
+            "label": "Points"
+        },
+        {
+            "type": "text",
+            "id": "highlighted_text",
+            "label": "Highlighted text"
+        },
+        {
+            "type": "image_picker",
+            "id": "small_image",
+            "label": "Small Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "large_image",
+            "label": "Large Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Text and Image section"
+        }
+    ]
+}
+{% endschema %}

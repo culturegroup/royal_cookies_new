@@ -1,0 +1,118 @@
+.four-images-section{
+    margin-bottom: 50px;
+
+    .section-header_indent_first{
+        margin-top: 67px;
+    }
+
+    .image-block{
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+
+        .four-images-section-img{
+            margin-right: 8px;
+            width: 25%;
+            height: 45vw;
+            max-height: 435px;
+            object-fit: cover;
+        }
+    }
+
+    .image--1, .image--3{
+        border-radius: 0 127px 0 78px;
+    }
+
+    .image--2, .image--4{
+        border-radius: 127px 0 78px 0;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .four-images-section{
+
+        .image-block{
+
+            .four-images-section-img{
+            }
+
+        }
+
+        .image--1, .image--3{
+            border-radius: 0 101px 0 63px;
+        }
+
+        .image--2, .image--4{
+            border-radius: 101px 0 63px 0;
+        }
+
+    }
+
+}
+
+@media (max-width: 992px){
+
+    .four-images-section{
+        padding: 0 15px;
+
+        .section-header_indent_first{
+            margin-top: 43px !important;
+        }
+
+        .image-block{
+            justify-content: start;
+            margin: 24px auto 0;
+
+            .four-images-section-img{
+                padding: 2px;
+                margin-right: 0 !important;
+            }
+
+            .image--1, .image--3{
+                border-radius: 0 73px 0 45px !important;
+            }
+    
+            .image--2, .image--4{
+                border-radius: 73px 0 45px 0 !important;
+            }    
+        }
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .four-images-section{
+
+        .image-block{
+            flex-wrap: wrap;
+            max-width: 350px;
+
+            .four-images-section-img{
+                width: 50%;
+                min-height: unset;
+                max-height: 250px;
+            }
+
+            .image--1{
+                order: 3;
+            }
+
+            .image--2{
+                order: 1;
+            }
+
+            .image--3{
+                order: 2;
+            }
+
+            .image--4{
+                order: 4;
+            }
+        }
+
+    }
+
+}

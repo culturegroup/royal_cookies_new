@@ -1,0 +1,118 @@
+.detailed-info-section{
+    background-image: url("{{'Section2-bg.jpg' | asset_url }}");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cookie-logo{
+        height: 78px;
+        margin-top: -38px;
+    }
+
+    .section-header_indent_second{
+        margin-top: 20px;
+    }
+
+    .detailed-info-section__img{
+        display: block;
+        width: 720px;
+        margin-top: 25px;
+    }
+
+    .detailed-info-section__img_for-media{
+        display: none;
+    }
+
+    .detailed-info-section__ingridients{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 790px;
+        margin: 30px 0;
+        border-radius: 100px 0;
+        background-color: #FBEFEF;
+        /* background: repeating-linear-gradient(
+            -45deg,
+            #EADDB2,
+            #EADDB2 5px,
+            #DBCC9E 3px,
+            #DBCC9E 6px,
+          ); */
+
+        h3{
+            font-family: 'HelveticaNeue';
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 50px;
+            text-transform: uppercase;
+            margin: 0;
+            margin-top: 24px;
+            color: #000000;
+        }
+
+        p{
+            text-align: center;
+            font-family: 'HelveticaNeue';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #212328;
+            max-width: 650px;
+        }
+    }
+}
+
+@media (max-width: 992px){
+
+    .detailed-info-section{
+        
+        .detailed-info-section__img{
+            margin-top: 25px;
+        }
+    
+        .detailed-info-section__img_for-media{
+            display: none;
+            /* margin-top: 25px; */
+        }
+
+        .detailed-info-section__ingridients{
+            width: 100%;
+            padding: 24px 16px;
+            
+            h3{
+                margin-top: 10px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+
+            p{
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .detailed-info-section{
+        padding: 0 20px;
+
+        .detailed-info-section__img{
+            display: none;
+            margin-top: 0;
+        }
+    
+        .detailed-info-section__img_for-media{
+            display: block;
+            margin-top: 25px;
+        }
+
+    }
+
+}

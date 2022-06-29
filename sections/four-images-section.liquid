@@ -1,0 +1,50 @@
+{{ 'four-images-section.scss.css' | asset_url | stylesheet_tag }}
+
+<section class="four-images-section page-width">
+
+    <div class="section-header section-header_indent_first">
+        {{ section.settings.title }}
+    </div>
+
+    <div class="image-block">
+        {% for block in section.blocks %}
+            {% if block.type == "image" %}
+                <img class="four-images-section-img image--{{forloop.index}}" src="{{ block.settings.image.src | img_url: 'master' }}" alt="">
+            {% endif %}
+        {% endfor %}
+    </div>
+
+</section>
+
+
+{% schema %}
+{
+    "name": "Four images section",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Image",
+            "type": "image",
+            "limit": 4,
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Four images section"
+        }
+    ]
+}
+{% endschema %}
