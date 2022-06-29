@@ -16,6 +16,12 @@
         },
         "price": {
           "type": "price",
+          "settings": {
+            "subtitle": "GUARANTEED DELIVERY WITHIN 3-5 DAYS"
+          }
+        },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {}
         },
         "description": {
@@ -149,8 +155,15 @@
         "large_image": "shopify:\/\/shop_images\/Section4-second-image.jpg"
       }
     },
+    "165653995891ae685b": {
+      "type": "product-reviews",
+      "settings": {
+        "title": "<p>Everyone Loves<\/p><p>Our <span style=\"text-decoration:underline\">Cookies<\/span><\/p>"
+      }
+    },
     "loox-product-reviews-app-section": {
       "type": "apps",
+      "disabled": true,
       "blocks": {
         "loox-product-reviews": {
           "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
@@ -176,6 +189,7 @@
     "16564889177015db20",
     "165648944403627a01",
     "16564903536bee145e",
+    "165653995891ae685b",
     "loox-product-reviews-app-section"
   ]
 }

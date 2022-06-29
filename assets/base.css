@@ -1360,10 +1360,6 @@ button.shopify-payment-button__button--unbranded {
     0 0 0 calc(var(--buttons-border-width) + 1px) rgba(var(--color-button), var(--alpha-button-background));
 }
 
-.button--secondary:after {
-  --border-opacity: var(--buttons-border-opacity);
-}
-
 .button:focus-visible,
 .button:focus,
 .button.focused,
@@ -2595,7 +2591,7 @@ details[open] > .header__submenu {
 .header__menu-item {
   padding: 1.2rem;
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .header__menu-item:hover {
