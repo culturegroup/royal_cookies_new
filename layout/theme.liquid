@@ -216,6 +216,8 @@
     </script>
   
   {% include "trackify_x" %}
+
+	{{ shop.metafields.loox["global_html_head"] }}
 </head>
 
   <body class="gradient">
@@ -272,5 +274,7 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
-  </body>
+  
+	{{ shop.metafields.loox["global_html_body"] }}
+</body>
 </html>
