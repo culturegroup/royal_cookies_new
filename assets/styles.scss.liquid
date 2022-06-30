@@ -96,6 +96,10 @@
   border: none;
   margin-bottom: 10px;
 
+  span{
+    text-transform: uppercase;
+  }
+
   &:hover{
     border: none;
   }
@@ -135,6 +139,18 @@
 .card__information{
   text-align: center;
 
+  .loox-rating{
+    text-align: center;
+    
+    .loox-star:before{
+      color: orange;
+    }
+  }
+
+  a[href='#looxReviews']{
+    color: black;
+  }
+
   .price--on-sale{
     text-align: center;
   }
@@ -145,4 +161,37 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
+}
+
+
+@media screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+
+  .banner__media{
+    position: relative !important;
+
+    img{
+      position: relative !important;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .banner__content{
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .banner__media::before, .banner__media::after {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile{
+    display: none;
+  }
 }

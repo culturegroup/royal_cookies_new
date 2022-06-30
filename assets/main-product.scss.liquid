@@ -23,13 +23,28 @@
 
         .media-gallery{
 
+            .slick-arrow-main{
+                position: absolute;
+                top: 35%;
+                z-index: 11;
+                transform: rotate(-90deg);
+                cursor: pointer;
+            }
+
+            .slick-arrow-prev{
+                left: 10px;
+            }
+
+            .slick-arrow-next{
+                right: 10px;
+            }
+
             @media screen and (min-width: 768px) {
                 width: 80%;
             }
 
             .media-gallery_slider{
                 @media screen and (max-width: 767px) {
-                    height: 600px;
                     width: 100%;
                     object-fit: cover;
                 }
@@ -40,7 +55,7 @@
                     }
 
                     @media screen and (max-width: 767px) {
-                        height: 100%;
+                        width: 100%;
                     }
                 }
             }
@@ -63,6 +78,7 @@
             .media-gallery-thumnails_slider{
                 overflow: hidden;
                 margin: 10px 0;
+                cursor: pointer;
 
                 .media-gallery-thumnails_slider--image{
                     width: 100%;
@@ -75,6 +91,7 @@
                 margin: auto;
                 cursor: pointer;
             }
+
 
             .slick-arrow{
                 margin-top: 10px;
@@ -97,7 +114,7 @@
         flex: 1 1 0px;
 
         @media screen and (max-width: 767px) {
-            margin-top: -150px;
+            margin-top: -80px;
             z-index: 1;
             position: relative;
             padding: 15px;
@@ -225,6 +242,7 @@
 
         .product-form__input{
             border: none;
+            width: 100%;
 
             @media screen and (max-width: 767px) {
                 margin: 0;
@@ -260,6 +278,7 @@
                     img {
                         max-height: 45px;
                         width: 100%;
+                        object-fit: cover;
                     }
                 }
     
@@ -352,6 +371,10 @@
             display: none;
         }
     }
+}
+
+.installment{
+    display: none !important;
 }
 
 .no-js-hidden{

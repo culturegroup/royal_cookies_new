@@ -139,8 +139,16 @@
               </p>
             {%- endif -%}
 
-            <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
-{% render 'price', product: card_product, price_class: '' %}
+
+            
+            {% if card_product.metafields.okendo.newProductListingSnippet.value != blank %}
+                <div class="loox-rating">
+                  {{ card_product.metafields.okendo.newProductListingSnippet.value }}
+                </div>
+              {% else %}
+              <div class="loox-rating" data-id="{{ card_product.id }}" data-rating="{{ card_product.metafields.loox.avg_rating }}" data-raters="{{ card_product.metafields.loox.num_reviews }}"></div>
+            {% endif %}
+            {% render 'price', product: card_product, price_class: '' %}
           </div>
         </div>
         {%- if show_quick_add -%}
