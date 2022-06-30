@@ -39,7 +39,7 @@
 {%- endstyle -%}
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
-  <img class="icon-logo" src="{{'cookie-logo.svg' | asset_url }}" alt="">
+  <img class="icon-logo" src="{{'cookie-logo.svg' | asset_url }}" alt="" loading="lazy">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="footer__content-top page-width">
       <div class="footer--newsletter">
