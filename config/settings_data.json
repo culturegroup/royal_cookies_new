@@ -84,9 +84,9 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "facebook.com",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "instagram.com",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -139,35 +139,35 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "OUR COMPANY",
               "menu": "footer"
             }
           },
           "footer-1": {
             "type": "link_list",
             "settings": {
-              "heading": "Info",
-              "menu": "footer"
+              "heading": "ACCOUNT",
+              "menu": "account"
             }
           },
-          "footer-2": {
-            "type": "text",
+          "e9dfc0a1-2a37-4ba2-9fd4-36e4c30dcce3": {
+            "type": "link_list",
             "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+              "heading": "INFO",
+              "menu": "info"
             }
           }
         },
         "block_order": [
           "footer-0",
           "footer-1",
-          "footer-2"
+          "e9dfc0a1-2a37-4ba2-9fd4-36e4c30dcce3"
         ],
         "settings": {
           "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Stay In Touch For 50% Off",
-          "show_social": true,
+          "show_social": false,
           "enable_country_selector": false,
           "enable_language_selector": false,
           "payment_enable": true,
