@@ -20,6 +20,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/SWJ_5726_1.jpg",
+        "mb_image": "shopify:\/\/shop_images\/cookies-edit-13.jpg",
         "image_overlay_opacity": 40,
         "image_height": "large",
         "adapt_height_first_image": true,
