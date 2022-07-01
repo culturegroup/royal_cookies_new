@@ -102,7 +102,7 @@
           {%- for block in section.blocks -%}
             <div class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
               {%- if block.settings.heading != blank -%}
-                <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
+                <h2 class="footer-block__heading active">{{- block.settings.heading | escape -}}</h2>
               {%- endif -%}
 
               {%- case block.type -%}
@@ -339,6 +339,12 @@
   </div>
   {%- endcomment -%}
 </footer>
+
+<script>
+  $('.footer-block--menu').click(function(){
+    $(this).children('.list-unstyled').toggleClass('hide')
+  })
+</script>
 
 {% javascript %}
   class LocalizationForm extends HTMLElement {

@@ -1,5 +1,8 @@
 .footer{
     background: url("{{ 'Rectangle 2.png' | asset_url }}");
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
     position: relative;
 
     .icon-logo{
@@ -22,12 +25,26 @@
             margin: 50px 0;
 
             .footer__heading{
+                display: flex;
+
+                &::before{
+                    content: url("{{'gold.svg' | asset_url }}");
+                    display: block;
+                    overflow: hidden;
+                    height: 100%;
+                    margin-right: 10px;
+
+                    @media screen and (max-width: 767px) {
+                        max-height: 70px;
+                    }
+                }
+
                 font-family: 'Juana';
                 font-style: normal;
                 font-weight: 300;
                 font-size: 50px;
                 line-height: 58px;
-                max-width: 310px;
+                max-width: 320px;
                 margin-right: 40px;
 
                 @media screen and (max-width: 767px) {
@@ -52,6 +69,8 @@
                         input[type="email"]{
                             &:focus{
                                 border: none;
+                                outline: none;
+                                padding: 10px;
                             }
                             
                             &::placeholder {
@@ -72,12 +91,20 @@
                             font-weight: 500;
                             font-size: 14px;
                             line-height: 17px;
+                            text-transform: uppercase;
                         }
                     }
                 }
             }
         }
     }
+
+    .footer__blocks-wrapper{
+        .footer-block{
+            margin-right: 10px;
+        }
+    }
+    
 
     .footer-block__heading{
         font-family: 'HelveticaNeue';
@@ -88,6 +115,17 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         padding-bottom: 5px;
+        display: flex;
+        justify-content: space-between;
+
+        &::after{
+            content: '—';
+            display: block;
+        }
+    }
+
+    .footer-block__details-content.hide{
+        display: none;
     }
 
     .list-menu__item {
