@@ -4,7 +4,7 @@
 
     <div class="text-block">
 
-        <img class="text-block__before-header-img" src="{{'Section4-before-header.png' | asset_url }}" alt="" loading="lazy">
+        <img class="text-block__before-header-img" srcset="{{'Section4-before-header.png' | asset_url }}" alt="" loading="lazy">
 
         <h2 class="text-block__header">
             {{ section.settings.title }}
@@ -24,11 +24,11 @@
 
     <div class="text-and-image-section__img-block">
 
-        <img class="small-img" src="{{ section.settings.small_image.src | img_url: 'master' }}" alt="" loading="lazy">
+        <img class="small-img" srcset="{{ section.settings.small_image.src | img_url: 'master' }}" alt="" loading="lazy">
 
-        <img class="big-img" src="{{ section.settings.large_image.src | img_url: 'master' }}" alt="" loading="lazy">
+        <img class="big-img" srcset="{{ section.settings.large_image.src | img_url: 'master' }}" alt="" loading="lazy">
 
-        <img class="logo-img" src="{{ 'Section4-logo.png' | asset_url }}" alt="" loading="lazy">
+        <img class="logo-img" srcset="{{ 'Section4-logo.png' | asset_url }}" alt="" loading="lazy">
 
     </div>
 
