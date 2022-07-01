@@ -11,7 +11,7 @@
     <div class="media-gallery-thumnails">
       {% for media in product.media %}
         <div class="media-gallery-thumnails_slider" data-media-id={{media.id}}>
-          <img class="media-gallery-thumnails_slider--image" srcset="{{ media | img_url: "master" }}" alt="{{ media.alt }}" loading="lazy">
+          <img class="media-gallery-thumnails_slider--image" srcset="{{ media | img_url: "100x" }}" alt="{{ media.alt }}" loading="lazy">
         </div>
       {% endfor %}
     </div>
@@ -19,7 +19,7 @@
     <div class="media-gallery media-gallery-desktop">
       {% for media in product.media %}
         <div class="media-gallery_slider">
-          <img class="media-gallery_slider--image" srcset="{{ media | img_url: "master" }}" alt="{{ media.alt }}" loading="lazy">
+          <img class="media-gallery_slider--image" srcset="{{ media | img_url: "480x" }}" alt="{{ media.alt }}" loading="lazy">
         </div>
       {% endfor %}
     </div>
@@ -213,7 +213,7 @@
                         >
                         <label class='variant-picker' for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                           <div class="variant-image">
-                            <img srcset="{{ variantMedia.src | img_url: 'master'}}" alt="" loading="lazy">
+                            <img srcset="{{ variantMedia.src | img_url: '100x'}}" alt="" loading="lazy">
                           </div>
                           <div class="variant-info">
                             <span class="info">{{ value }}</span>
