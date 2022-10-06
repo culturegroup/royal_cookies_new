@@ -1,0 +1,193 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "d9231ea1-1e0d-41cf-9f39-d4416f501cfd": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "subtitle"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "subtitle": "GUARANTEED DELIVERY WITHIN 3-5 DAYS"
+          }
+        },
+        "loox-rating": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-rating\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "d9231ea1-1e0d-41cf-9f39-d4416f501cfd",
+        "price",
+        "loox-rating",
+        "description",
+        "variant_picker",
+        "buy_buttons"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "gallery_layout": "thumbnail",
+        "media_size": "large",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "1656347493a508d7c1": {
+      "type": "four-images-section",
+      "blocks": {
+        "d225c5a6-3a50-47e3-a9bb-b35381e48047": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/macarons_1_bd939c2a-3242-48b7-b8bc-cbec25d94e09.jpg"
+          }
+        },
+        "ea8aeb13-2e30-48b6-88f4-3cf14638a5ea": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/macarons_2_c31a9212-8ee0-467d-8df5-7a59ad99fad4.jpg"
+          }
+        },
+        "50f69e96-ddd3-486b-a5d6-e07058074d6d": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/macarons_3_6ae58d64-5149-4b47-8e6a-dc42561937df.jpg"
+          }
+        },
+        "0b26516e-d71f-4601-bb1f-7af344f05742": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/macarons_4_9c47cbe7-1508-43ef-8755-aa6b2e6b1418.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "d225c5a6-3a50-47e3-a9bb-b35381e48047",
+        "ea8aeb13-2e30-48b6-88f4-3cf14638a5ea",
+        "50f69e96-ddd3-486b-a5d6-e07058074d6d",
+        "0b26516e-d71f-4601-bb1f-7af344f05742"
+      ],
+      "settings": {
+        "title": "<p>Fresh Royal<\/p><p>Macarons <span style=\"text-decoration:underline\">Everyday<\/span><\/p>"
+      }
+    },
+    "16564889177015db20": {
+      "type": "detailed-info-section",
+      "settings": {
+        "title": "<p>Perfection Made <span style=\"text-decoration:underline\">Fresh<\/span> For You<\/p>",
+        "desktop_image": "shopify:\/\/shop_images\/Group_1110.png",
+        "mobile_image": "shopify:\/\/shop_images\/Group_1110.png",
+        "ingredients": "<p>Almond , Birthday Cake,  Bubble Gum, Capuccino,  Cassis,  Chocolate,  Cookies & Cream,  Coconut,  Cotton, Candy , Lemon,  Mango,  Passion Fruit, Pistachio,  Salted Caramel,  Strawberry, Tiramisu,  Raspberry and  Vanilla<br\/><\/p>"
+      }
+    },
+    "165648944403627a01": {
+      "type": "three-images-section",
+      "blocks": {
+        "946d545c-ec3d-4238-89a3-d018441d77a6": {
+          "type": "image",
+          "settings": {
+            "text": "<p>Even edible when its being destroyed by a Child<\/p>",
+            "image": "shopify:\/\/shop_images\/SWJ_5432_9a0f1289-6e30-42f0-8a87-bfeac06791dc.jpg"
+          }
+        },
+        "242afc78-a29a-4f00-aae8-c7182f35aeee": {
+          "type": "image",
+          "settings": {
+            "text": "<p>The head baker doesn't use forks...<\/p>",
+            "image": "shopify:\/\/shop_images\/SWJ_5439.jpg"
+          }
+        },
+        "d11ffc92-ccfa-4c9c-ab10-58e4b475776a": {
+          "type": "image",
+          "settings": {
+            "text": "<p>So delicious, you won't stop at just one.<\/p>",
+            "image": "shopify:\/\/shop_images\/SWJ_5397.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "946d545c-ec3d-4238-89a3-d018441d77a6",
+        "242afc78-a29a-4f00-aae8-c7182f35aeee",
+        "d11ffc92-ccfa-4c9c-ab10-58e4b475776a"
+      ],
+      "settings": {}
+    },
+    "16564903536bee145e": {
+      "type": "text-and-image-section",
+      "settings": {
+        "title": "<p>OMG<\/p><p>THAT’S <span style=\"text-decoration:underline\">GOOD<\/span><\/p>",
+        "info": "<p>Royals take macarons to the next level with rich ingredients and undeniably sweet tastes for an experience like none other. Baked fresh daily to ensure the best quality - these are macarons made for the 1%, available to the masses.<\/p>",
+        "points": "<p>These are macarons for the red carpet.<\/p><p>Macarons for munching on your private jet to Bali.<\/p><p>Cookies to share with a queen. <\/p>",
+        "highlighted_text": "These are macarons for Royals, are you ready?",
+        "small_image": "shopify:\/\/shop_images\/SWJ_5522.jpg",
+        "large_image": "shopify:\/\/shop_images\/SWJ_5272.jpg"
+      }
+    },
+    "165653995891ae685b": {
+      "type": "product-reviews",
+      "settings": {
+        "title": "<p>Everyone Loves<\/p><p>Our <span style=\"text-decoration:underline\">Macarons<\/span><\/p>"
+      }
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-dynamic-section\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "hide_thumbnails": false,
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1656347493a508d7c1",
+    "16564889177015db20",
+    "165648944403627a01",
+    "16564903536bee145e",
+    "165653995891ae685b",
+    "loox-product-reviews-app-section"
+  ]
+}
