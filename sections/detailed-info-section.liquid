@@ -16,7 +16,9 @@
 
         <img srcset="{{ 'cookie-2.svg' | asset_url }}" alt="" loading="lazy">
 
-        <h3>all ingredients:</h3>
+        {% if section.settings.ingredients_title != blank %}
+            <h3>{{ section.settings.ingredients_title }}</h3>
+        {% endif %}
 
         {{ section.settings.ingredients }}
 
@@ -42,6 +44,12 @@
             "type": "image_picker",
             "id": "mobile_image",
             "label": "Mobile image"
+        },
+        {
+            "type": "text",
+            "id": "ingredients_title",
+            "label": "Ingredients title",
+            "default": "all ingredients:"
         },
         {
             "type": "richtext",
